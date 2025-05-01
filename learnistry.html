@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="icon" type="image" href="pics/logo.jpg">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+  <link rel="stylesheet" href="style1.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+  <style>
+    
+.query-form {
+    background: rgba(255, 255, 255, 0.2); /* Transparent background */
+    text-align: left;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px);
+    width: 700px;
+    color:black;
+}
+
+.query-form h2 {
+    text-align: left;
+    color: #333;
+}
+
+
+.query-form input,
+.query-form textarea {
+    width: 300px;
+    padding: 10px;
+    margin-bottom: 50px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+.query-form button {
+    width: 20%;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: blue;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.query-form button:hover {
+    background-color: #555;
+}
+.query-form textarea{
+    width: 625px;
+}
+.query-form ::placeholder{
+    color: black;
+}
+    .container1 {
+      display: grid;
+      align-items: center;
+      grid-template-columns: 1fr 1fr 1fr;
+      column-gap: 5px;
+
+    }
+
+    .img {
+
+      max-width: 100%;
+      height: 100%;
+    }
+
+    .text {
+      margin-left: 150px;
+    }
+
+    /* Bottom left text */
+    .bottom-left {
+      position: absolute;
+      bottom: 350px;
+      left: 60px;
+      font-size: xx-large;
+
+    }
+
+    .top-left {
+      position: absolute;
+      top: 450px;
+      left: 180px;
+
+    }
+
+    .card1 {
+      text-align: center;
+      font-weight: bold;
+    }
+
+
+    .top-right {
+      position: absolute;
+      top: 550px;
+      left: 100px;
+    }
+
+    .section {
+      padding: 10px;
+    }
+  </style>
+
+</head>
+
+<body>
+
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">
+        <img src="pics/logo.jpg" alt="Logo" width="45oi " height="45" style="float: left;">
+        <h2 style="float: left;margin-left: 25px;">LEARNISTRY</h2>
+      </a> <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+        aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <center>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="#">About</a>
+            </li>
+    
+           
+
+            <li class="nav-item dropdown">
+              <a class="nav-link active dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="">
+                More
+              </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+                <li><a class="dropdown-item" href="#zxc">Services</a></li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+                <li><a class="dropdown-item" href="#asd">Contact Us</a></li>
+                
+            </li>
+
+
+      </center>
+      <div class="col-md-1">
+        <a href="login1.html">
+          <button type="button" class="btn btn-secondary" style="background-color: #6F2DA8;" data-bs-toggle="modal"
+            data-bs-target="#exampleModall">Apply Now</button></a>
+
+      </div>
+    </div>
+  </nav>
+  <!--------------------------------------------------------------------------->
+  <div class="container-fluid">
+    <img src="pics/Untitled design.jpg" alt="" width="100%" height="600">
+    <div class="bottom-left">
+      <h3 style="color: #6F2DA8;">Learnistry</h3><br>
+      <h1><b>Explore <b style="color: #6F2DA8;">50+</b> courses from <p>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;leading instructor </p>
+        </b></h1>
+    </div>
+    <div class="top-left">
+      <i class="fa-solid fa-star fa-2x" style="color: #FFD43B; "></i><i class="fa-solid fa-star fa-2x"
+        style="color: #FFD43B;"></i><i class="fa-solid fa-star fa-2x" style="color: #FFD43B;"></i><i
+        class="fa-solid fa-star fa-2x" style="color: #FFD43B;"></i><i class="fa-solid fa-star fa-2x"
+        style="color: #FFD43B;"></i>
+    </div>
+    <div class="top-right">
+      >&nbsp;&nbsp;<b>Elevate Your Learning Organisation To New Heights</b>
+    </div>
+
+
+
+  </div>
+  <!----------------------------------------------------------------------------------------------------->
+  <div style="background-color: #eaf2f8;">
+    <center>
+      <h4>Learnistry</h4>
+      <h2>Recommended <i style="color: #6F2DA8;">Courses</i></h2>
+    </center>
+    <div class="slide-container swiper">
+      <div class="slide-content">
+        <div class="card-wrapper swiper-wrapper">
+          
+          <div class="card swiper-slide">
+            <div class="image-content">
+              <span class="overlay"></span>
+
+              <div class="card-image">
+                <img src="pics/jee main.jpg" alt="" class="card-img">
+              </div>
+            </div>
+
+            <div class="card-content">
+              <h2 class="name">JEE Main</h2>
+              <p class="description">05 courses</p>
+
+            </div>
+          </div>
+          <div class="card swiper-slide">
+            <div class="image-content">
+              <span class="overlay"></span>
+
+              <div class="card-image">
+                <img src="pics/jee advance.jpg" alt="" class="card-img">
+              </div>
+            </div>
+
+            <div class="card-content">
+              <h2 class="name">JEE Advance</h2>
+              <p class="description">04 courses</p>
+
+
+            </div>
+          </div>
+
+         
+          
+          <div class="card swiper-slide">
+            <div class="image-content">
+              <span class="overlay"></span>
+
+              <div class="card-image">
+                <img src="pics/neet.png" alt="" class="card-img">
+              </div>
+            </div>
+
+            <div class="card-content">
+              <h2 class="name">NEET</h2>
+              <p class="description">04 courses</p>
+
+
+            </div>
+          </div>
+          
+        </div>
+      </div>
+
+      <div class="swiper-button-next swiper-navBtn"></div>
+      <div class="swiper-button-prev swiper-navBtn"></div>
+      <div class="swiper-pagination"></div>
+    </div>
+
+
+  </div>
+
+
+  <!------------------------------------------------------------------------------------------------->
+  <div id="zxc">
+    <center style="color: #6F2DA8;padding-top: 50px;">
+      <h4> Featured Courses</h4>
+  
+  
+    </center>
+    <center>
+      <h2>Explore Our <b>Courses</b></h2>
+    </center>
+    <div class="container">
+      <div class="row">
+        <div style="display: flex; flex-wrap: wrap;">
+   
+         <a href="check.html">
+          <div class="card card1" style="width: 25rem;margin: auto; margin-bottom: 25px;" >
+          <img src="pics/jee main.jpg" class="card-img-top" alt="..." height="200">
+          <div class="card-body" >
+            JEE Main
+          </div>
+        </div>
+      </a>
+         
+         <a href="check2.html">
+          <div class="card card1" style="width: 25rem;margin: auto; margin-bottom: 25px;">
+            <img src="pics/jee advance.jpg" class="card-img-top" alt="..." height="200">
+            <div class="card-body">
+              JEE Advance
+            </div>
+          </div>
+         </a>
+          
+         <a href="check3.html">
+          <div class="card card1" style="width: 25rem;margin: auto; margin-bottom: 25px;">
+            <img src="pics/neet.png" class="card-img-top" alt="..." height="200">
+            <div class="card-body">
+              NEET
+            </div>
+          </div>
+         </a>
+        </div>
+      </div>
+    </div>
+    <center>
+      <button style="border: none; background-color: #6F2DA8; padding: 10px; color: aliceblue;">
+        View All Courses <b>></b>
+      </button>
+    </center>
+  </div>
+
+
+
+  <!----------------------------------  ------------------------------------------------->
+
+  <div class="section" style="background-color: #6F2DA8; margin: 15px; border-radius: 10px;">
+
+    <div class="inner_section" style="display: flex; justify-content: center; ">
+      <div style="margin: 10px; margin-right: 150px; text-align: center;">
+        <div class="inner_items" style="background-color: #eaf2f8; border-radius:10px; padding: 5px;">
+          <img src="pics/courses_1.webp" width="100px">
+        </div>
+        <span style="color: #eaf2f8; font-size: 20px;"><b>200+</b></span> <span
+          style="color: #eaf2f8; font-size: 20px;"><br>Courses</span>
+      </div>
+      <div style="margin: 10px; margin-right: 150px; text-align: center;">
+        <div class="inner_items" style="background-color: #eaf2f8; border-radius:10px; padding: 5px;">
+          <img src="pics/Students.webp" width="100px">
+
+        </div>
+        <span style="color: #eaf2f8; font-size: 20px;"><b>20K</b></span> <span
+          style="color: #eaf2f8; font-size: 20px;"><br>Students</span>
+      </div>
+      <div style="margin: 10px; margin-right: 150px; text-align: center;">
+        <div class="inner_items" style="background-color: #eaf2f8; border-radius:10px; padding: 5px;">
+          <img src="pics/Rating.webp" width="100px">
+
+        </div>
+        <span style="color: #eaf2f8; font-size: 20px;"><b>4-5</b><br> </span><span
+          style="color: #eaf2f8; font-size: 20px;">Ratings</span>
+      </div>
+      <div style="margin: 10px; margin-right: 50px; text-align: center;">
+        <div class="inner_items" style="background-color: #eaf2f8; border-radius:10px; padding: 5px;">
+          <img src="pics/Certified.webp" width="100px">
+
+        </div>
+        <span style="color: #eaf2f8; font-size: 20px;"><b>15K</b><br></span> <span
+          style="color: #eaf2f8; font-size: 20px;"> Certified</span>
+      </div>
+    </div>
+
+  </div>
+  <!-------------------------------------------------------------------------------------------->
+
+  <div class="container1" id="asd">
+    <div class="image">
+      <img src="pics/customer care.jpg">
+    </div>
+    
+    <div class="query-form">
+      <h2>Have a Query? Ask questions.</h2>
+      <form id="query-form">
+          <input type="text" id="fullName" placeholder="Enter full name" required> 
+          <input type="email" id="email" placeholder="Enter your email" required>
+          <br>
+          <input type="text" id="phoneNumber" placeholder="Enter your number" required>
+          <input type="text" id="subject" placeholder="Enter subject" required>
+          <br>
+          <textarea id="message" placeholder="Enter your message" rows="3" required></textarea>
+          <br>
+          <button type="button" onclick="saveDetails()">Submit</button>
+      </form>
+  </div>                       
+  </div>
+
+
+  <!------------------------------------------------------------------------------------------------------------------->
+
+
+  <!--Footer -->
+  <footer style="background-color:#b697d1; padding-top: 40px;">
+    <div class="container">
+      <div class="row">
+        <!-- About Us Section -->
+        <div class="col-md-4 mb-4" style="color: black;">
+         <img src="pics/logo.jpg" alt="" width="50" height="50"><br>
+          <ul class="list-unstyled d-inline-flex">
+            <li class="me-3">
+              <a href="#" target="_blank" class="text-white text-decoration-none">
+                <i class="fab fa-facebook-f" style="color: black;"></i>
+              </a>
+            </li>
+            <li class="me-3">
+              <a href="#" target="_blank" class="text-white text-decoration-none">
+                <i class="fab fa-linkedin-in" style="color: black;"></i>
+              </a>
+            </li>
+            <li>
+              <a href="#" target="_blank" class="text-white text-decoration-none">
+                <i class="fab fa-instagram" style="color: black;"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <!-- Quick Links Section -->
+        <div class="col-md-4 mb-4" style="color: black;">
+          <h5 class="mb-3 text-center">Quick Links</h5>
+          <ul class="list-unstyled text-center">
+            <li>
+              <a href="#" class="text-dark text-decoration-none">>Home</a>
+            </li>
+            <li>
+            </li>
+            <a href="#" class="text-dark text-decoration-none">>About Us</a>
+            <li>
+              <a href="#" class="text-dark text-decoration-none">>Blog</a>
+            </li>
+            <li>
+              <a href="#" class="text-dark text-decoration-none">>Services</a>
+            </li>
+            <li>
+              <a href="#" class="text-dark text-decoration-none">>Contact us</a>
+            </li>
+          </ul>
+        </div>
+        <!-- Follow Us Section -->
+        <div class="col-md-4 mb-4" style="color: black;">
+          <h5 class="mb-3 text-center">CONTACT US</h5>
+          <div class="text-center">
+            <i class="fa-solid fa-globe" style="font-size: 10px;"> &nbsp;&nbsp;INDIA-22067 punjab </i><br>
+            <i class="fa-solid fa-envelope" style="font-size: 10px;"> &nbsp;&nbsp;abc@gmail.com</i><br>
+            <i class="fa-solid fa-globe" style="font-size: 10px;"> &nbsp;&nbsp;+91987</i>
+           
+
+          </div>
+        </div>
+      </div>
+      <div class="text-center py-3 border-top border-secondary mt-3" style="color: black;">
+        &copy; 2024 Learnistry - All Rights Reserved.
+      </div>
+    </div>
+  </footer>
+
+
+</body>
+<!-- Swiper JS -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+<!-- JavaScript -->
+<script src="script1.js"></script>
+
+
+
+
+
+
+
+
+
+
+</html>
