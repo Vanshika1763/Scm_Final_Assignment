@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form</title>
+    <link rel="stylesheet"href="login1.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+   
+
+
+<body>
+    <div class="wrapper">
+        <form id="login-form">
+            <h1>Login</h1>
+            <div class="input-box">
+                <input type="text" id="username" placeholder="Username" required>
+                <i class='bx bxs-user'></i>
+            </div>
+            <div class="input-box">
+                <input type="password" id="password" placeholder="Password" required>
+                <i class='bx bxs-lock'></i>
+            </div>
+            <div class="remember-forgot">
+                <label><input type="checkbox">Remember Me</label>
+                <a href="#" id="forgot-password">Forgot Password?</a>
+            </div>
+            <button type="submit" class="btn">Login</button>
+            <div class="register-link">
+                <p>Don't have an account? <a href="signup.html">Register</a></p>
+            </div>
+        </form>
+    </div>
+
+    <!-- Forgot Password Modal -->
+    <div id="new-password-modal" style="display: none;">
+        <h2>Reset Password</h2>
+        <p>Enter your new password:</p>
+        <input type="password" id="new-password" placeholder="New Password" required>
+        <button id="submit-new-password">Submit</button>
+    </div>
+
+    <style>
+        /* Styling for modal */
+        #new-password-modal {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: white;
+            padding: 20px;
+            border: 1px solid #ccc;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            z-index: 1000;
+        }
+    </style>
+</body>
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+    // Get elements
+    const loginForm = document.getElementById("login-form");
+    const forgotPasswordLink = document.getElementById("forgot-password");
+    const newPasswordModal = document.getElementById("new-password-modal");
+    const submitNewPasswordButton = document.getElementById("submit-new-password");
+    const newPasswordInput = document.getElementById("new-password");
+
+    // Handle login form submission
+    loginForm.addEventListener("submit", function (event) {
+        event.preventDefault();
+
+        const username = document.getElementById("username").value;
+        const password = document.getElementById("password").value;
+
+        // Validate username and password
+        if (username && password) {
+            // Redirect to the new page if valid
+            window.location.href = "learnistry.html";
+        } else {
+            alert("Please enter both username and password.");
+        }
+    });
+
+    // Handle forgot password click
+    forgotPasswordLink.addEventListener("click", function (event) {
+        event.preventDefault();
+
+        // Show the "create new password" modal
+        newPasswordModal.style.display = "block";
+    });
+
+    // Handle new password submission
+    submitNewPasswordButton.addEventListener("click", function () {
+        const newPassword = newPasswordInput.value;
+
+        if (newPassword) {
+            // Display success message
+            alert("Password changed successfully!, Log in with the new password");
+            newPasswordModal.style.display = "none"; // Close the modal
+            newPasswordInput.value = ""; // Clear the input field
+        } else {
+            alert("Please enter a new password.");
+        }
+    });
+});
+
+
+  </script>
+</html>
